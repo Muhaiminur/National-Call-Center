@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/national_emergency_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/emergency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/national_emergency_code_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/national_info_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/national_info_code_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/national_ambulance_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/ambulance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/national_ambulance_code_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp">
+
+            <com.facebook.ads.NativeAdLayout
+                android:id="@+id/native_ad_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/app_name"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/app_name" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/national_durjog_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/durjog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/national_durjog_code_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/national_bank_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/national_bank_code_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/national_law_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/law"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/national_law_code_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/national_durniti_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/durniti"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/national_durniti_code_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/national_manobadiker_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/manobhadikar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/national_manobadiker_code_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/nirbachon_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/nirbachon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/nirbachon_code_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/national_nari_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/nari1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/national_nari_code_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/national_nari2_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/nari2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/national_nari2_code_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/national_krisi_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/krisi1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/national_krisi_code_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/national_krisi2_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/krisi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/national_krisi2_code_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/national_btcl_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/btcl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/national_btcl_code_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/national_foreign_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/foreign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/national_foreign_code_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/national_family_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/family"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/national_family_title_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangular_border"
+            android:padding="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_gradient"
+                    android:padding="5dp"
+                    android:text="@string/national_titas_title_string"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/app_white"
+                    android:textSize="22sp" />
+
+                <Button
+                    android:id="@+id/titas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/national_titas_code_string" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+</ScrollView>

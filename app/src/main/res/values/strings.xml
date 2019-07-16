@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">জাতীয় গুরুত্বপূর্ণ নম্বরসমূহ</string>
+    <string name="national_emergency_title_string">ন্যাশনাল ইমার্জেন্সি সার্ভিস</string>
+    <string name="national_emergency_code_string">999</string>
+    <string name="national_info_title_string">জাতীয় তথ্য</string>
+    <string name="national_info_code_string">333</string>
+    <string name="national_ambulance_title_string">জাতীয় অ্যাম্বুলেন্স</string>
+    <string name="national_ambulance_code_string">16263</string>
+    <string name="national_durjog_title_string">দুর্যোগ ব্যবস্থাপনা ও ত্রাণ মন্ত্রণালয়</string>
+    <string name="national_durjog_code_string">1090</string>
+    <string name="national_bank_title_string">বাংলাদেশ ব্যাংকের গ্রাহক অভিযোগ</string>
+    <string name="national_bank_code_string">16236</string>
+    <string name="national_law_title_string">সরকারি আইনগত সহায়তা</string>
+    <string name="national_law_code_string">16430</string>
+    <string name="national_durniti_title_string">দুর্নীতি দমন কমিশন</string>
+    <string name="national_durniti_code_string">106</string>
+    <string name="national_manobadiker_title_string">জাতীয় মানবাধিকার কমিশন</string>
+    <string name="national_manobadiker_code_string">16108</string>
+    <string name="nirbachon_title_string">নির্বাচন কমিশন</string>
+    <string name="nirbachon_code_string">105</string>
+    <string name="national_nari_title_string">নারী ও শিশু নির্যাতন</string>
+    <string name="national_nari_code_string">109</string>
+    <string name="national_nari2_title_string">জাতীয় মহিলা সংস্থার তথ্য আপা</string>
+    <string name="national_nari2_code_string">10922</string>
+    <string name="national_krisi_title_string">কৃষি কল সেন্টার</string>
+    <string name="national_krisi_code_string">16123</string>
+    <string name="national_krisi2_title_string">কৃষক বন্ধু</string>
+    <string name="national_krisi2_code_string">3331</string>
+    <string name="national_btcl_title_string">বিটিসিএল কল সেন্টার</string>
+    <string name="national_btcl_code_string">16402</string>
+    <string name="national_foreign_title_string">প্রবাসী কল্যাণ ও বৈদেশিক কর্মসংস্থান মন্ত্রণালয়</string>
+    <string name="national_foreign_code_string">01784333333</string>
+    <string name="national_family_title_string">সুখী পরিবার কল সেন্টার</string>
+    <string name="national_family_code_string">16767</string>
+    <string name="national_titas_title_string">তিতাস গ্যাস ট্রান্সমিশন</string>
+    <string name="national_titas_code_string">16496</string>
+
+    <string name="homepage_banner">462109951291368_462110884624608</string>
+    <string name="homepage_intersteller">462109951291368_462112264624470</string>
+    <string name="homepage_native">462109951291368_462112731291090</string>
+</resources>

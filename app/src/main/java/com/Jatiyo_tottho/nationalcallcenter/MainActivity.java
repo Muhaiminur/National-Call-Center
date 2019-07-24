@@ -74,10 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AdView adView;
     private InterstitialAd interstitialAd;
-
     private final String TAG = MainActivity.class.getSimpleName();
-
-
     private NativeAd nativeAd;
     private NativeAdLayout nativeAdLayout;
     private LinearLayout nativeadView;
@@ -427,48 +424,52 @@ public class MainActivity extends AppCompatActivity {
 
     private void inflateAd(NativeAd nativeAd) {
 
-        nativeAd.unregisterView();
+        try {
+            nativeAd.unregisterView();
 
-        // Add the Ad view into the ad container.
-        nativeAdLayout = findViewById(R.id.native_ad_container);
-        LayoutInflater inflater = LayoutInflater.from(MainActivity.this);
-        // Inflate the Ad view.  The layout referenced should be the one you created in the last step.
-        nativeadView = (LinearLayout) inflater.inflate(R.layout.native_ad_layout, nativeAdLayout, false);
-        nativeAdLayout.addView(nativeadView);
+            // Add the Ad view into the ad container.
+            nativeAdLayout = findViewById(R.id.native_ad_container);
+            LayoutInflater inflater = LayoutInflater.from(MainActivity.this);
+            // Inflate the Ad view.  The layout referenced should be the one you created in the last step.
+            nativeadView = (LinearLayout) inflater.inflate(R.layout.native_ad_layout, nativeAdLayout, false);
+            nativeAdLayout.addView(nativeadView);
 
-        // Add the AdOptionsView
-        LinearLayout adChoicesContainer = findViewById(R.id.ad_choices_container);
-        AdOptionsView adOptionsView = new AdOptionsView(MainActivity.this, nativeAd, nativeAdLayout);
-        adChoicesContainer.removeAllViews();
-        adChoicesContainer.addView(adOptionsView, 0);
+            // Add the AdOptionsView
+            LinearLayout adChoicesContainer = findViewById(R.id.ad_choices_container);
+            AdOptionsView adOptionsView = new AdOptionsView(MainActivity.this, nativeAd, nativeAdLayout);
+            adChoicesContainer.removeAllViews();
+            adChoicesContainer.addView(adOptionsView, 0);
 
-        // Create native UI using the ad metadata.
-        AdIconView nativeAdIcon = nativeadView.findViewById(R.id.native_ad_icon);
-        TextView nativeAdTitle = nativeadView.findViewById(R.id.native_ad_title);
-        MediaView nativeAdMedia = nativeadView.findViewById(R.id.native_ad_media);
-        TextView nativeAdSocialContext = nativeadView.findViewById(R.id.native_ad_social_context);
-        TextView nativeAdBody = nativeadView.findViewById(R.id.native_ad_body);
-        TextView sponsoredLabel = nativeadView.findViewById(R.id.native_ad_sponsored_label);
-        Button nativeAdCallToAction = nativeadView.findViewById(R.id.native_ad_call_to_action);
+            // Create native UI using the ad metadata.
+            AdIconView nativeAdIcon = nativeadView.findViewById(R.id.native_ad_icon);
+            TextView nativeAdTitle = nativeadView.findViewById(R.id.native_ad_title);
+            MediaView nativeAdMedia = nativeadView.findViewById(R.id.native_ad_media);
+            TextView nativeAdSocialContext = nativeadView.findViewById(R.id.native_ad_social_context);
+            TextView nativeAdBody = nativeadView.findViewById(R.id.native_ad_body);
+            TextView sponsoredLabel = nativeadView.findViewById(R.id.native_ad_sponsored_label);
+            Button nativeAdCallToAction = nativeadView.findViewById(R.id.native_ad_call_to_action);
 
-        // Set the Text.
-        nativeAdTitle.setText(nativeAd.getAdvertiserName());
-        nativeAdBody.setText(nativeAd.getAdBodyText());
-        nativeAdSocialContext.setText(nativeAd.getAdSocialContext());
-        nativeAdCallToAction.setVisibility(nativeAd.hasCallToAction() ? View.VISIBLE : View.INVISIBLE);
-        nativeAdCallToAction.setText(nativeAd.getAdCallToAction());
-        sponsoredLabel.setText(nativeAd.getSponsoredTranslation());
+            // Set the Text.
+            nativeAdTitle.setText(nativeAd.getAdvertiserName());
+            nativeAdBody.setText(nativeAd.getAdBodyText());
+            nativeAdSocialContext.setText(nativeAd.getAdSocialContext());
+            nativeAdCallToAction.setVisibility(nativeAd.hasCallToAction() ? View.VISIBLE : View.INVISIBLE);
+            nativeAdCallToAction.setText(nativeAd.getAdCallToAction());
+            sponsoredLabel.setText(nativeAd.getSponsoredTranslation());
 
-        // Create a list of clickable views
-        List<View> clickableViews = new ArrayList<>();
-        clickableViews.add(nativeAdTitle);
-        clickableViews.add(nativeAdCallToAction);
+            // Create a list of clickable views
+            List<View> clickableViews = new ArrayList<>();
+            clickableViews.add(nativeAdTitle);
+            clickableViews.add(nativeAdCallToAction);
 
-        // Register the Title and CTA button to listen for clicks.
-        nativeAd.registerViewForInteraction(
-                nativeadView,
-                nativeAdMedia,
-                nativeAdIcon,
-                clickableViews);
+            // Register the Title and CTA button to listen for clicks.
+            nativeAd.registerViewForInteraction(
+                    nativeadView,
+                    nativeAdMedia,
+                    nativeAdIcon,
+                    clickableViews);
+        } catch (Exception e) {
+            Log.d("Error Line Number", Log.getStackTraceString(e));
+        }
     }
 }
